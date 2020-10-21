@@ -3,10 +3,11 @@ import pyautogui as p
 
 doLoop = True
 count = 0
-
+a = 0
 while doLoop:
     p.click(1100,478)
     count=count+1
+    a=a+1
     if count==50:
         count=0
         while p.pixelMatchesColor(1679,999,(255,255,255),tolerance=10):
@@ -23,6 +24,10 @@ while doLoop:
             p.click(1674,682)
         while p.pixelMatchesColor(1674,616,(255,255,255),tolerance=10):
             p.click(1674,616)
+    if a == 50:
+        a=0
+        if p.confirm(text="Do you want to stop the program?",title="",buttons=["OK","Continue"])=="OK":
+            doLoop=False
     
         
         
