@@ -1,6 +1,5 @@
 #! python3
 import pyautogui as p
-import time as t
 
 doLoop = True
 count = 0
@@ -9,21 +8,22 @@ while doLoop:
     p.click(1100,478)
     count=count+1
     if count==50:
-        count==0
-        while p.pixelMatchesColor(1739,760,(100,249,100),tolerance=10):
-            p.click(1739,760)
-        while p.pixelMatchesColor(1737,701,(100,249,100),tolerance=10):
-            p.click(1737,701)
-        while p.pixelMatchesColor(1730,647,(100,249,100),tolerance=10):
-            p.click(1730,647)
-        while p.pixelMatchesColor(1730,578,(100,249,100),tolerance=10):
-            p.click(1730,578)
-        while p.pixelMatchesColor(1721,515,(100,249,100),tolerance=10):
-            p.click(1721,515)
-        while p.pixelMatchesColor(1735,447,(100,249,100),tolerance=10):
-            p.click(1735,447)
-        while p.pixelMatchesColor(1745,391,(100,249,100),tolerance=10):
-            p.click(1745,391)
-        doLoop = False
+        count=0
+        while p.pixelMatchesColor(1679,999,(255,255,255),tolerance=10):
+            p.click(1679,999)
+        while p.pixelMatchesColor(1676,935,(255,255,255),tolerance=10):
+            p.click(1676,935)
+        while p.pixelMatchesColor(1674,876,(255,255,255),tolerance=10):
+            p.click(1674,876)
+        while p.pixelMatchesColor(1678,805,(255,255,255),tolerance=10):
+            p.click(1678,805)
+        while p.pixelMatchesColor(1676,741,(255,255,255),tolerance=10):
+            p.click(1676,741)
+        while p.pixelMatchesColor(1674,682,(255,255,255),tolerance=10):
+            p.click(1674,682)
+        while p.pixelMatchesColor(1674,616,(255,255,255),tolerance=10):
+            p.click(1674,616)
+    
+        
         
 
